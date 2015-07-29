@@ -1,33 +1,69 @@
 [user]
 	name = Dan Budiac
 	email = dansays@gmail.com
+
 [core]
 	editor = subl -n -w
+
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
 [push]
 	default = simple
+
+[alias]
+	lga = log --graph --oneline --all --decorate
+
+	# Amend the currently staged files to the latest commit
+	amend = commit --amend --reuse-message=HEAD
+
+	# List contributors with number of commits
+	contributors = shortlog --summary --numbered
+
+[apply]
+	whitespace = fix
+
+[core]
+	# Treat spaces before tabs and all kinds of trailing whitespace as an error
+	# [default] trailing-space: looks for spaces at the end of a line
+	# [default] space-before-tab: looks for spaces before tabs at
+	# the beginning of a line
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+	# Make `git rebase` safer on OS X
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
-	ui = true
-	pager = true
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	ui = auto
+
+	#diff = auto
+	#status = auto
+	#branch = auto
+	#interactive = auto
+	#ui = true
+	#pager = true
+
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
+
 [color "status"]
 	added = yellow
 	changed = green
 	untracked = cyan
-[alias]
-	lga = log --graph --oneline --all --decorate
