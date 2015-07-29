@@ -1,0 +1,5 @@
+# Symlink to this file from ~/.bashrc
+
+. ~/documents/projects/dotfiles/dotfiles/bash/env
+. ~/documents/projects/dotfiles/dotfiles/bash/config
+. ~/documents/projects/dotfiles/dotfiles/bash/aliases
