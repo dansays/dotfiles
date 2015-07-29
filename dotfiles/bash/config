@@ -1,6 +1,5 @@
 ## Prompt 
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-	export PS1="\n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u@\h \[$(tput setaf 6)\]\w\[$(tput setaf 2)\]]$(__git_ps1 " (%s)")\[$(tput setaf 4)\]\n\\$ \[$(tput sgr0)\]"
-fi
+source /usr/local/etc/bash_completion
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='\n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u@\h \[$(tput setaf 6)\]\w\[$(tput setaf 2)\]]$(__git_ps1 " (%s)")\[$(tput setaf 4)\]\n\\$ \[$(tput sgr0)\]'
