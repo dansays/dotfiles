@@ -1,0 +1,27 @@
+## Utility
+
+alias reload="source ~/projects/dotfiles/dotfiles/bash/aliases ~/projects/dotfiles/dotfiles/bash/env"
+alias ea="subl ~/projects/dotfiles/dotfiles/bash/aliases && reload"
+alias ee="subl ~/projects/dotfiles/dotfiles/bash/env && reload"
+
+## Bash commands
+
+alias cd..="cd .."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+## Tree
+
+alias tree1="tree -L 1"
+alias tree2="tree -L 2"
+alias tree3="tree -L 3"
+alias tree4="tree -L 4"
+
+# Directory Size
+alias whatsize="du -sh *"
+
+# Misc
+alias fucking=sudo
+alias ll='ls -l'
