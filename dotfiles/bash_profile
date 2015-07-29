@@ -1,5 +1,5 @@
 # Symlink to this file from ~/.bash_profile
 
-. ./bash/env
-. ./bash/config
-. ./bash/aliases
+. ~/projects/dotfiles/dotfiles/bash/env
+. ~/projects/dotfiles/dotfiles/bash/config
+. ~/projects/dotfiles/dotfiles/bash/aliases
