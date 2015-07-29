@@ -29,3 +29,5 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[alias]
+	lga = log --graph --oneline --all --decorate
