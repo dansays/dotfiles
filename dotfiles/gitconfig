@@ -1,8 +1,6 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-name = Dan Budiac
-email = dansays@gmail.com
+	name = Dan Budiac
+	email = dansays@gmail.com
 [core]
 	editor = subl -n -w
 [filter "lfs"]
@@ -12,9 +10,22 @@ email = dansays@gmail.com
 [push]
 	default = simple
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
-  ui = true
-  pager = true
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+  frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
