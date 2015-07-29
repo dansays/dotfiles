@@ -1,0 +1,19 @@
+# Symlink to this file from ~/.bash_profile
+
+alias fucking=sudo
+alias ll='ls -l'
+
+export PATH=$PATH:/usr/local/bin
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+	export PS1="\n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u@\h \[$(tput setaf 6)\]\w\[$(tput setaf 2)\]]$(__git_ps1 " (%s)")\[$(tput setaf 4)\]\n\\$ \[$(tput sgr0)\]"
+fi
+
+alias cd..="cd .."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
