@@ -3,3 +3,4 @@
 . ~/documents/projects/dotfiles/dotfiles/bash/env
 . ~/documents/projects/dotfiles/dotfiles/bash/config
 . ~/documents/projects/dotfiles/dotfiles/bash/aliases
+. ~/documents/projects/dotfiles/dotfiles/bash/prompt
