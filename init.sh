@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ln -s dotfiles/bash_profile ~/.bash_profile
-ln -s dotfiles/gitconfig ~/.gitconfig
+ln -s ~/projects/dotfiles/dotfiles/bash_profile ~/.bash_profile
+ln -s ~/projects/dotfiles/dotfiles/gitconfig ~/.gitconfig
