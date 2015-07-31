@@ -1,6 +1,6 @@
 # Symlink to this file from ~/.bashrc
 
-. ~/documents/projects/dotfiles/dotfiles/bash/env
-. ~/documents/projects/dotfiles/dotfiles/bash/config
-. ~/documents/projects/dotfiles/dotfiles/bash/aliases
-. ~/documents/projects/dotfiles/dotfiles/bash/prompt
+. ~/projects/dotfiles/dotfiles/bash/env
+. ~/projects/dotfiles/dotfiles/bash/config
+. ~/projects/dotfiles/dotfiles/bash/aliases
+. ~/projects/dotfiles/dotfiles/bash/prompt
