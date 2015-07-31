@@ -4,3 +4,4 @@
 . ~/projects/dotfiles/dotfiles/bash/config
 . ~/projects/dotfiles/dotfiles/bash/aliases
 . ~/projects/dotfiles/dotfiles/bash/prompt
+[ -s "/Users/dansays/.dnx/dnvm/dnvm.sh" ] && . "/Users/dansays/.dnx/dnvm/dnvm.sh" # Load dnvm
